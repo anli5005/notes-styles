@@ -7,7 +7,9 @@
     "build:base": "node-sass --output-style expanded --source-map true --source-map-contents true --precision 6 src/base.scss dist/base.css",
     "build:anli5005": "node-sass --output-style expanded --source-map true --source-map-contents true --precision 6 src/anli5005-notes.scss dist/anli5005-notes.css",
     "build:anli5005:preview": "node-sass --output-style expanded --source-map true --source-map-contents true --precision 6 src/anli5005-notes-preview.scss dist/anli5005-notes-preview.css",
-    "build": "npm-run-all --parallel build:base build:anli5005 build:anli5005:preview && npm run prefix",
+    "build:apa:w": "node-sass --output-style expanded --source-map true --source-map-contents true --precision 6 src/apa-w.scss dist/apa-w.css",
+    "build:apa:w:preview": "node-sass --output-style expanded --source-map true --source-map-contents true --precision 6 src/apa-w-preview.scss dist/apa-w-preview.css",
+    "build": "npm-run-all --parallel build:base build:anli5005 build:anli5005:preview build:apa:w build:apa:w:preview && npm run prefix",
     "prefix": "postcss --config postcss.config.js --replace \"dist/*.css\"",
     "copy:fonts": "cp -r vendor/fontawesome/webfonts dist/webfonts",
     "test": "echo \"Error: no test specified\" && exit 1"

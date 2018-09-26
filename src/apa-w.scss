@@ -1,0 +1,24 @@
+$h1-font-size: 16pt;
+$h2-font-size: 14pt;
+$h3-font-size: $h2-font-size * 0.875;
+$h4-font-size: $h2-font-size * 0.75;
+$h5-font-size: $h2-font-size * 0.625;
+$h6-font-size: 12pt;
+$headings-font-weight: bold;
+
+@import './apa';
+
+h1 {
+  text-align: center;
+}
+
+header {
+  padding-top: 0.5em;
+  text-align: right;
+  width: 100%;
+  line-height: 1.15;
+
+  p {
+    text-indent: 0;
+  }
+}
