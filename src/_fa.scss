@@ -1,0 +1,18 @@
+$fa-font-path: './webfonts';
+@import '../vendor/fontawesome/scss/fontawesome';
+
+fa, fas {
+  @extend .fas;
+}
+
+far {
+  @extend .far;
+}
+
+fal {
+  @extend .fal;
+}
+
+fab {
+  @extend .fab;
+}

@@ -1,0 +1,15 @@
+language: node_js
+node_js:
+  - "node"
+
+script: npm run build
+
+before_deploy:
+  - npm run copy:fonts
+deploy:
+  provider: pages
+  skip-cleanup: true
+  keep-history: true
+  local-dir: dist
+  on:
+    branch: master
