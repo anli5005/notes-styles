@@ -1,1 +1,41 @@
+$font-family-base: "Adelle", adelle, "Roboto Slab", "Times New Roman", serif;
+
+$h1-font-size: 4rem;
+$headings-font-family: "Europa", europa, "Helvetica Neue", arial, sans-serif;
+$headings-font-weight: 700;
+
+$container-max-widths: (
+  sm: 540px,
+  md: 640px,
+  lg: 740px,
+  xl: 840px
+);
+
 @import './base';
+@import '../vendor/prism-base16-ateliersulphurpool.light';
+
+.container {
+  padding-top: 1in;
+  padding-bottom: 1in;
+}
+
+@media print {
+  .container {
+    padding: 1in;
+    margin: 0;
+    width: 100%;
+    max-width: none;
+  }
+}
+
+h1 {
+  font-weight: 200;
+}
+
+h2, h3 {
+  font-weight: normal;
+}
+
+table:not(.unstyled) {
+  @extend .table;
+}

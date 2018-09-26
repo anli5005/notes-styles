@@ -1,5 +1,8 @@
 $fa-font-path: './webfonts';
 @import '../vendor/fontawesome/scss/fontawesome';
+@import '../vendor/fontawesome/scss/solid';
+@import '../vendor/fontawesome/scss/regular';
+@import '../vendor/fontawesome/scss/brands';
 
 fa, fas {
   @extend .fas;
@@ -7,10 +10,6 @@ fa, fas {
 
 far {
   @extend .far;
-}
-
-fal {
-  @extend .fal;
 }
 
 fab {
