@@ -11,6 +11,35 @@
  */
   /* Font Awesome uses the Unicode Private Use Area (PUA) to ensure screen
 readers do not read off random characters that represent icons */
+  /*!
+ * Font Awesome Free 5.3.1 by @fontawesome - https://fontawesome.com
+ * License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License)
+ */
+  /*!
+ * Font Awesome Free 5.3.1 by @fontawesome - https://fontawesome.com
+ * License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License)
+ */
+  /*!
+ * Font Awesome Free 5.3.1 by @fontawesome - https://fontawesome.com
+ * License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License)
+ */
+  /*
+
+Name:       Base16 Atelier Sulphurpool Light
+Author:     Bram de Haan (http://atelierbram.github.io/syntax-highlighting/atelier-schemes/sulphurpool)
+
+Prism template by Bram de Haan (http://atelierbram.github.io/syntax-highlighting/prism/)
+Original Base16 color scheme by Chris Kempson (https://github.com/chriskempson/base16)
+
+*/
+  /* Code blocks */
+  /* Inline code */
+  /* overrides color-values for the Line Numbers plugin
+ * http://prismjs.com/plugins/line-numbers/
+ */
+  /* overrides color-values for the Line Highlight plugin
+ * http://prismjs.com/plugins/line-highlight/
+ */
 }
 
 .preview :root {
@@ -69,7 +98,7 @@ readers do not read off random characters that represent icons */
 
 .preview body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  font-family: "Adelle", adelle, "Roboto Slab", "Times New Roman", serif;
   font-size: 1rem;
   font-weight: 400;
   line-height: 1.5;
@@ -371,14 +400,14 @@ readers do not read off random characters that represent icons */
 .preview h1, .preview h2, .preview h3, .preview h4, .preview h5, .preview h6,
 .preview .h1, .preview .h2, .preview .h3, .preview .h4, .preview .h5, .preview .h6 {
   margin-bottom: 0.5rem;
-  font-family: inherit;
-  font-weight: 500;
+  font-family: "Europa", europa, "Helvetica Neue", arial, sans-serif;
+  font-weight: 700;
   line-height: 1.2;
   color: inherit;
 }
 
 .preview h1, .preview .h1 {
-  font-size: 2.5rem;
+  font-size: 4rem;
 }
 
 .preview h2, .preview .h2 {
@@ -572,19 +601,19 @@ a > .preview code {
 
 @media (min-width: 768px) {
   .preview .container {
-    max-width: 720px;
+    max-width: 640px;
   }
 }
 
 @media (min-width: 992px) {
   .preview .container {
-    max-width: 960px;
+    max-width: 740px;
   }
 }
 
 @media (min-width: 1200px) {
   .preview .container {
-    max-width: 1140px;
+    max-width: 840px;
   }
 }
 
@@ -1371,29 +1400,30 @@ a > .preview code {
   }
 }
 
-.preview .table {
+.preview .table, .preview table:not(.unstyled) {
   width: 100%;
   margin-bottom: 1rem;
   background-color: transparent;
 }
 
-.preview .table th,
-.preview .table td {
+.preview .table th, .preview table:not(.unstyled) th,
+.preview .table td,
+.preview table:not(.unstyled) td {
   padding: 0.75rem;
   vertical-align: top;
   border-top: 1px solid #dee2e6;
 }
 
-.preview .table thead th {
+.preview .table thead th, .preview table:not(.unstyled) thead th {
   vertical-align: bottom;
   border-bottom: 2px solid #dee2e6;
 }
 
-.preview .table tbody + tbody {
+.preview .table tbody + tbody, .preview table:not(.unstyled) tbody + tbody {
   border-top: 2px solid #dee2e6;
 }
 
-.preview .table .table {
+.preview .table .table, .preview table:not(.unstyled) .table, .preview .table table:not(.unstyled), .preview table:not(.unstyled) table:not(.unstyled) {
   background-color: #fff;
 }
 
@@ -1566,13 +1596,13 @@ a > .preview code {
   background-color: rgba(0, 0, 0, 0.075);
 }
 
-.preview .table .thead-dark th {
+.preview .table .thead-dark th, .preview table:not(.unstyled) .thead-dark th {
   color: #fff;
   background-color: #212529;
   border-color: #32383e;
 }
 
-.preview .table .thead-light th {
+.preview .table .thead-light th, .preview table:not(.unstyled) .thead-light th {
   color: #495057;
   background-color: #e9ecef;
   border-color: #dee2e6;
@@ -5245,7 +5275,7 @@ a > .preview code {
   z-index: 1070;
   display: block;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  font-family: "Adelle", adelle, "Roboto Slab", "Times New Roman", serif;
   font-style: normal;
   font-weight: 400;
   line-height: 1.5;
@@ -5358,7 +5388,7 @@ a > .preview code {
   z-index: 1060;
   display: block;
   max-width: 276px;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  font-family: "Adelle", adelle, "Roboto Slab", "Times New Roman", serif;
   font-style: normal;
   font-weight: 400;
   line-height: 1.5;
@@ -8544,11 +8574,12 @@ a > .preview code {
   .preview .badge {
     border: 1px solid #000;
   }
-  .preview .table {
+  .preview .table, .preview table:not(.unstyled) {
     border-collapse: collapse !important;
   }
+  
   .preview .table td,
-  .preview .table th {
+  .preview table:not(.unstyled) td, .preview .table th, .preview table:not(.unstyled) th {
     background-color: #fff !important;
   }
   .preview .table-bordered th,
@@ -8564,7 +8595,7 @@ a > .preview code {
   .preview .table-dark tbody + tbody {
     border-color: #dee2e6;
   }
-  .preview .table .thead-dark th {
+  .preview .table .thead-dark th, .preview table:not(.unstyled) .thead-dark th {
     color: inherit;
     border-color: #dee2e6;
   }
@@ -8577,7 +8608,6 @@ a > .preview code {
 .preview .far,
 .preview far,
 .preview .fal,
-.preview fal,
 .preview .fab,
 .preview fab {
   -moz-osx-font-smoothing: grayscale;
@@ -8687,7 +8717,6 @@ a > .preview code {
 .preview .far.fa-pull-left,
 .preview far.fa-pull-left,
 .preview .fal.fa-pull-left,
-.preview fal.fa-pull-left,
 .preview .fab.fa-pull-left,
 .preview fab.fa-pull-left {
   margin-right: .3em;
@@ -8700,7 +8729,6 @@ a > .preview code {
 .preview .far.fa-pull-right,
 .preview far.fa-pull-right,
 .preview .fal.fa-pull-right,
-.preview fal.fa-pull-right,
 .preview .fab.fa-pull-right,
 .preview fab.fa-pull-right {
   margin-left: .3em;
@@ -13594,5 +13622,233 @@ a > .preview code {
   overflow: visible;
   position: static;
   width: auto;
+}
+
+@font-face {
+  .preview {
+    font-family: 'Font Awesome 5 Free';
+    font-style: normal;
+    font-weight: 900;
+    src: url("./webfonts/fa-solid-900.eot");
+    src: url("./webfonts/fa-solid-900.eot?#iefix") format("embedded-opentype"), url("./webfonts/fa-solid-900.woff2") format("woff2"), url("./webfonts/fa-solid-900.woff") format("woff"), url("./webfonts/fa-solid-900.ttf") format("truetype"), url("./webfonts/fa-solid-900.svg#fontawesome") format("svg");
+  }
+}
+
+.preview .fa,
+.preview .fas,
+.preview fa,
+.preview fas {
+  font-family: 'Font Awesome 5 Free';
+  font-weight: 900;
+}
+
+@font-face {
+  .preview {
+    font-family: 'Font Awesome 5 Free';
+    font-style: normal;
+    font-weight: 400;
+    src: url("./webfonts/fa-regular-400.eot");
+    src: url("./webfonts/fa-regular-400.eot?#iefix") format("embedded-opentype"), url("./webfonts/fa-regular-400.woff2") format("woff2"), url("./webfonts/fa-regular-400.woff") format("woff"), url("./webfonts/fa-regular-400.ttf") format("truetype"), url("./webfonts/fa-regular-400.svg#fontawesome") format("svg");
+  }
+}
+
+
+.preview .far,
+.preview far {
+  font-family: 'Font Awesome 5 Free';
+  font-weight: 400;
+}
+
+@font-face {
+  .preview {
+    font-family: 'Font Awesome 5 Brands';
+    font-style: normal;
+    font-weight: normal;
+    src: url("./webfonts/fa-brands-400.eot");
+    src: url("./webfonts/fa-brands-400.eot?#iefix") format("embedded-opentype"), url("./webfonts/fa-brands-400.woff2") format("woff2"), url("./webfonts/fa-brands-400.woff") format("woff"), url("./webfonts/fa-brands-400.ttf") format("truetype"), url("./webfonts/fa-brands-400.svg#fontawesome") format("svg");
+  }
+}
+
+
+.preview .fab,
+.preview fab {
+  font-family: 'Font Awesome 5 Brands';
+}
+
+.preview code[class*="language-"],
+.preview pre[class*="language-"] {
+  font-family: Consolas, Menlo, Monaco, "Andale Mono WT", "Andale Mono", "Lucida Console", "Lucida Sans Typewriter", "DejaVu Sans Mono", "Bitstream Vera Sans Mono", "Liberation Mono", "Nimbus Mono L", "Courier New", Courier, monospace;
+  font-size: 14px;
+  line-height: 1.375;
+  direction: ltr;
+  text-align: left;
+  white-space: pre;
+  word-spacing: normal;
+  word-break: normal;
+  -moz-tab-size: 4;
+  -o-tab-size: 4;
+  tab-size: 4;
+  -webkit-hyphens: none;
+  -ms-hyphens: none;
+  hyphens: none;
+  background: #f5f7ff;
+  color: #5e6687;
+}
+
+.preview pre[class*="language-"]::-moz-selection, .preview pre[class*="language-"] ::-moz-selection,
+.preview code[class*="language-"]::-moz-selection, .preview code[class*="language-"] ::-moz-selection {
+  text-shadow: none;
+  background: #dfe2f1;
+}
+
+.preview pre[class*="language-"]::selection, .preview pre[class*="language-"] ::selection,
+.preview code[class*="language-"]::selection, .preview code[class*="language-"] ::selection {
+  text-shadow: none;
+  background: #dfe2f1;
+}
+
+.preview pre[class*="language-"] {
+  padding: 1em;
+  margin: .5em 0;
+  overflow: auto;
+}
+
+.preview :not(pre) > code[class*="language-"] {
+  padding: .1em;
+  border-radius: .3em;
+}
+
+.preview .token.comment,
+.preview .token.prolog,
+.preview .token.doctype,
+.preview .token.cdata {
+  color: #898ea4;
+}
+
+.preview .token.punctuation {
+  color: #5e6687;
+}
+
+.preview .token.namespace {
+  opacity: .7;
+}
+
+.preview .token.operator,
+.preview .token.boolean,
+.preview .token.number {
+  color: #c76b29;
+}
+
+.preview .token.property {
+  color: #c08b30;
+}
+
+.preview .token.tag {
+  color: #3d8fd1;
+}
+
+.preview .token.string {
+  color: #22a2c9;
+}
+
+.preview .token.selector {
+  color: #6679cc;
+}
+
+.preview .token.attr-name {
+  color: #c76b29;
+}
+
+.preview .token.entity,
+.preview .token.url,
+.preview .language-css .token.string,
+.preview .style .token.string {
+  color: #22a2c9;
+}
+
+.preview .token.attr-value,
+.preview .token.keyword,
+.preview .token.control,
+.preview .token.directive,
+.preview .token.unit {
+  color: #ac9739;
+}
+
+.preview .token.statement,
+.preview .token.regex,
+.preview .token.atrule {
+  color: #22a2c9;
+}
+
+.preview .token.placeholder,
+.preview .token.variable {
+  color: #3d8fd1;
+}
+
+.preview .token.deleted {
+  text-decoration: line-through;
+}
+
+.preview .token.inserted {
+  border-bottom: 1px dotted #202746;
+  text-decoration: none;
+}
+
+.preview .token.italic {
+  font-style: italic;
+}
+
+.preview .token.important,
+.preview .token.bold {
+  font-weight: bold;
+}
+
+.preview .token.important {
+  color: #c94922;
+}
+
+.preview .token.entity {
+  cursor: help;
+}
+
+.preview pre > code.highlight {
+  outline: 0.4em solid #c94922;
+  outline-offset: .4em;
+}
+
+.preview .line-numbers .line-numbers-rows {
+  border-right-color: #dfe2f1;
+}
+
+.preview .line-numbers-rows > span:before {
+  color: #979db4;
+}
+
+.preview .line-highlight {
+  background: rgba(107, 115, 148, 0.2);
+  background: linear-gradient(to right, rgba(107, 115, 148, 0.2) 70%, rgba(107, 115, 148, 0));
+}
+
+.preview .container {
+  padding-top: 1in;
+  padding-bottom: 1in;
+}
+
+@media print {
+  .preview .container {
+    padding: 1in;
+    margin: 0;
+    width: 100%;
+    max-width: none;
+  }
+}
+
+.preview h1 {
+  font-weight: 200;
+}
+
+.preview h2,
+.preview h3 {
+  font-weight: normal;
 }
 /*# sourceMappingURL=anli5005-notes-preview.css.map */
