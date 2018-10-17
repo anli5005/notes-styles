@@ -13645,6 +13645,10 @@ fab {
   font-family: 'Font Awesome 5 Brands';
 }
 
+.comic-sans {
+  font-family: "Comic Sans MS" !important;
+}
+
 @page {
   margin: calc(1in - 6pt) 1in;
 }

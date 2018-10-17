@@ -13656,6 +13656,10 @@ a > .preview code {
   font-family: 'Font Awesome 5 Brands';
 }
 
+.preview .comic-sans {
+  font-family: "Comic Sans MS" !important;
+}
+
 @page {
   .preview {
     margin: calc(1in - 6pt) 1in;

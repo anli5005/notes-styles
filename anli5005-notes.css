@@ -13647,6 +13647,10 @@ fab {
   font-family: 'Font Awesome 5 Brands';
 }
 
+.comic-sans {
+  font-family: "Comic Sans MS" !important;
+}
+
 /*
 
 Name:       Base16 Atelier Sulphurpool Light

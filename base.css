@@ -13644,4 +13644,8 @@ far {
 fab {
   font-family: 'Font Awesome 5 Brands';
 }
+
+.comic-sans {
+  font-family: "Comic Sans MS" !important;
+}
 /*# sourceMappingURL=base.css.map */
