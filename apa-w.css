@@ -13649,6 +13649,10 @@ fab {
   font-family: "Comic Sans MS" !important;
 }
 
+img:not(.no-constrain) {
+  max-width: 100%;
+}
+
 @page {
   margin: calc(1in - 6pt) 1in;
 }

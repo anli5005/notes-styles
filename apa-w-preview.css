@@ -13660,6 +13660,10 @@ a > .preview code {
   font-family: "Comic Sans MS" !important;
 }
 
+.preview img:not(.no-constrain) {
+  max-width: 100%;
+}
+
 @page {
   .preview {
     margin: calc(1in - 6pt) 1in;
