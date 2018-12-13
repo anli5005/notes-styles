@@ -39,3 +39,7 @@ h2, h3 {
 table:not(.unstyled) {
   @extend .table;
 }
+
+blockquote:not(.unstyled) {
+  @extend .blockquote;
+}
