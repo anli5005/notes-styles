@@ -14073,6 +14073,10 @@ g.classGroup line {
   color: lightgrey;
 }
 
+.label {
+  font-family: "Times New Roman", "Times", "Tinos", serif;
+}
+
 .comic-sans {
   font-family: "Comic Sans MS" !important;
 }

@@ -14103,6 +14103,10 @@ a > .preview code {
   color: lightgrey;
 }
 
+.preview .label {
+  font-family: "Adelle", adelle, "Roboto Slab", "Times New Roman", serif;
+}
+
 .preview .comic-sans {
   font-family: "Comic Sans MS" !important;
 }

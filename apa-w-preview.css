@@ -14084,6 +14084,10 @@ a > .preview code {
   color: lightgrey;
 }
 
+.preview .label {
+  font-family: "Times New Roman", "Times", "Tinos", serif;
+}
+
 .preview .comic-sans {
   font-family: "Comic Sans MS" !important;
 }

@@ -14075,6 +14075,10 @@ g.classGroup line {
   color: lightgrey;
 }
 
+.label {
+  font-family: "Adelle", adelle, "Roboto Slab", "Times New Roman", serif;
+}
+
 .comic-sans {
   font-family: "Comic Sans MS" !important;
 }
