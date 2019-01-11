@@ -43,3 +43,7 @@ table:not(.unstyled) {
 blockquote:not(.unstyled) {
   @extend .blockquote;
 }
+
+.label {
+  font-size: 96%;
+}
