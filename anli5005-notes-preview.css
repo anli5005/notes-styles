@@ -14286,4 +14286,8 @@ a > .preview code {
 .preview h3 {
   font-weight: normal;
 }
+
+.preview .label {
+  font-size: 96%;
+}
 /*# sourceMappingURL=anli5005-notes-preview.css.map */
