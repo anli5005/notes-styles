@@ -13688,7 +13688,6 @@ a > .preview code {
 }
 
 .preview .label {
-  font-family: 'trebuchet ms', verdana, arial;
   color: #333;
 }
 
@@ -14101,10 +14100,6 @@ a > .preview code {
 .preview .branch-label {
   fill: lightgrey;
   color: lightgrey;
-}
-
-.preview .label {
-  font-family: "Adelle", adelle, "Roboto Slab", "Times New Roman", serif;
 }
 
 .preview .comic-sans {

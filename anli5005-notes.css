@@ -13651,7 +13651,6 @@ fab {
 /* Sequence Diagram variables */
 /* Gantt chart variables */
 .label {
-  font-family: 'trebuchet ms', verdana, arial;
   color: #333;
 }
 
@@ -14073,10 +14072,6 @@ g.classGroup line {
 .branch-label {
   fill: lightgrey;
   color: lightgrey;
-}
-
-.label {
-  font-family: "Adelle", adelle, "Roboto Slab", "Times New Roman", serif;
 }
 
 .comic-sans {

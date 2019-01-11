@@ -13669,7 +13669,6 @@ a > .preview code {
 }
 
 .preview .label {
-  font-family: 'trebuchet ms', verdana, arial;
   color: #333;
 }
 
@@ -14082,10 +14081,6 @@ a > .preview code {
 .preview .branch-label {
   fill: lightgrey;
   color: lightgrey;
-}
-
-.preview .label {
-  font-family: "Times New Roman", "Times", "Tinos", serif;
 }
 
 .preview .comic-sans {

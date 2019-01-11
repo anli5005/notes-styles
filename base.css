@@ -13649,7 +13649,6 @@ fab {
 /* Sequence Diagram variables */
 /* Gantt chart variables */
 .label {
-  font-family: 'trebuchet ms', verdana, arial;
   color: #333;
 }
 
@@ -14071,10 +14070,6 @@ g.classGroup line {
 .branch-label {
   fill: lightgrey;
   color: lightgrey;
-}
-
-.label {
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
 }
 
 .comic-sans {
