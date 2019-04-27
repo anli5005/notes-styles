@@ -1746,6 +1746,11 @@ a > .preview code {
   opacity: 1;
 }
 
+.preview .form-control::-moz-placeholder {
+  color: #6c757d;
+  opacity: 1;
+}
+
 .preview .form-control:-ms-input-placeholder {
   color: #6c757d;
   opacity: 1;
@@ -4394,8 +4399,10 @@ a > .preview code {
 @media (min-width: 576px) {
   .preview .card-columns {
     -webkit-column-count: 3;
+    -moz-column-count: 3;
     column-count: 3;
     -webkit-column-gap: 1.25rem;
+    -moz-column-gap: 1.25rem;
     column-gap: 1.25rem;
     orphans: 1;
     widows: 1;
@@ -8571,7 +8578,7 @@ a > .preview code {
   }
   @page {
     .preview {
-      size: a3;
+      size: initial;
     }
   }
   .preview body {

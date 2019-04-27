@@ -1695,6 +1695,11 @@ pre code {
   opacity: 1;
 }
 
+.form-control::-moz-placeholder {
+  color: #6c757d;
+  opacity: 1;
+}
+
 .form-control:-ms-input-placeholder {
   color: #6c757d;
   opacity: 1;
@@ -4343,8 +4348,10 @@ input[type="button"].btn-block {
 @media (min-width: 576px) {
   .card-columns {
     -webkit-column-count: 3;
+    -moz-column-count: 3;
     column-count: 3;
     -webkit-column-gap: 1.25rem;
+    -moz-column-gap: 1.25rem;
     column-gap: 1.25rem;
     orphans: 1;
     widows: 1;
@@ -8519,7 +8526,7 @@ a.text-dark:hover, a.text-dark:focus {
     page-break-after: avoid;
   }
   @page {
-    size: a3;
+    size: initial;
   }
   body {
     min-width: 992px !important;
@@ -14081,16 +14088,18 @@ img:not(.no-constrain) {
 }
 
 @page {
-  margin: calc(1in - 6pt) 1in;
+  margin: 1in;
 }
 
-.container-fluid {
+.container, .container-fluid {
   padding: 0;
+  margin-top: 1in;
+  margin-bottom: 1in;
 }
 
-@media screen {
-  .container-fluid {
-    padding: calc(1in - 6pt) 1in;
+@media print {
+  .container, .container-fluid {
+    margin: 0;
   }
 }
 
@@ -14100,6 +14109,10 @@ body {
 
 p {
   text-indent: 0.5in;
+}
+
+p img {
+  display: block;
 }
 
 p, li, blockquote, h1, h2, h3, h4, h5, h6 {

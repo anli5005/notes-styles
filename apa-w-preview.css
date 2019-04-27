@@ -1728,6 +1728,11 @@ a > .preview code {
   opacity: 1;
 }
 
+.preview .form-control::-moz-placeholder {
+  color: #6c757d;
+  opacity: 1;
+}
+
 .preview .form-control:-ms-input-placeholder {
   color: #6c757d;
   opacity: 1;
@@ -4376,8 +4381,10 @@ a > .preview code {
 @media (min-width: 576px) {
   .preview .card-columns {
     -webkit-column-count: 3;
+    -moz-column-count: 3;
     column-count: 3;
     -webkit-column-gap: 1.25rem;
+    -moz-column-gap: 1.25rem;
     column-gap: 1.25rem;
     orphans: 1;
     widows: 1;
@@ -8553,7 +8560,7 @@ a > .preview code {
   }
   @page {
     .preview {
-      size: a3;
+      size: initial;
     }
   }
   .preview body {
@@ -14093,17 +14100,19 @@ a > .preview code {
 
 @page {
   .preview {
-    margin: calc(1in - 6pt) 1in;
+    margin: 1in;
   }
 }
 
-.preview .container-fluid {
+.preview .container, .preview .container-fluid {
   padding: 0;
+  margin-top: 1in;
+  margin-bottom: 1in;
 }
 
-@media screen {
-  .preview .container-fluid {
-    padding: calc(1in - 6pt) 1in;
+@media print {
+  .preview .container, .preview .container-fluid {
+    margin: 0;
   }
 }
 
@@ -14113,6 +14122,10 @@ a > .preview code {
 
 .preview p {
   text-indent: 0.5in;
+}
+
+.preview p img {
+  display: block;
 }
 
 .preview p, .preview li, .preview blockquote, .preview h1, .preview h2, .preview h3, .preview h4, .preview h5, .preview h6 {
