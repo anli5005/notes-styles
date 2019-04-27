@@ -2,22 +2,23 @@ $font-family-sans-serif: Arial, sans-serif;
 $font-family-base: "Times New Roman", "Times", "Tinos", serif;
 $line-height-base: 2;
 $page-margin: 1in !default;
-$page-margin-correction: 6pt !default;
-$page-margin-corrected: calc(#{$page-margin} - #{$page-margin-correction}) #{$page-margin};
+$text-indent-base: 0.5in !default;
 
 @import './base';
 
 @page {
-  margin: $page-margin-corrected;
+  margin: $page-margin;
 }
 
-.container-fluid {
+.container, .container-fluid {
   padding: 0;
+  margin-top: $page-margin;
+  margin-bottom: $page-margin;
 }
 
-@media screen {
-  .container-fluid {
-    padding: $page-margin-corrected;
+@media print {
+  .container, .container-fluid {
+    margin: 0;
   }
 }
 
@@ -26,7 +27,11 @@ body {
 }
 
 p {
-  text-indent: 0.5in;
+  text-indent: $text-indent-base;
+
+  img {
+    display: block;
+  }
 }
 
 p, li, blockquote, h1, h2, h3, h4, h5, h6 {
